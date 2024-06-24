@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap");
+body {
+  background-color: #1f2122;
+  font-family: Poppins, sans-serif;
+}
+
+.Cybrog-navbar {
+  background-color: #1f2122;
+  min-height: 6.25rem;
+}
+
+.Hero {
+  background: url("assets/images/banner-bg.jpg") no-repeat top right/cover;
+  background-position: center;
+  min-width: 25rem;
+  max-width: 100%;
+  background-color: #ec6090;
+  padding: 3.125rem 2.5rem;
+  border-radius: 1.5625rem;
+}
+.Hero__text {
+  color: white;
+  font-size: 1.5625rem;
+  padding-bottom: 1.5625rem;
+}
+.Hero__title {
+  font-size: 3.125rem;
+  font-weight: 800;
+  color: white;
+  padding-bottom: 1.25rem;
+}
+.Hero__title span {
+  color: #ec6090;
+}
+.Hero__button button {
+  background-color: #ec6090;
+  color: white;
+}
+
+.main__container {
+  width: 80%;
+  margin: auto;
+  padding: 3.125rem;
+  min-width: 33.75rem;
+  max-width: 100%;
+  background-color: #27292a;
+  border-radius: 1.5625rem;
+}/*# sourceMappingURL=App.css.map */

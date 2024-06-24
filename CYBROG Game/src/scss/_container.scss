@@ -1,0 +1,9 @@
+.main__container{
+  width:80%;
+  margin:  auto;
+  padding: rem($primarypadding);
+  min-width: rem(540);
+  max-width: 100%;
+  background-color: $colorDark;
+  border-radius: rem($disprimary/2);
+}

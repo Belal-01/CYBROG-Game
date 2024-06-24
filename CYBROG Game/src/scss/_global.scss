@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
+$primaryColor:#ec6090;
+$colorDark:#27292a;
+$colorlight:white;
+$colorDarkest:#1f2122;
+$disprimary:50;
+$bodyBGColor:$colorDarkest;
+$primarypadding:$disprimary;
+$primarymargin :$disprimary;
+
+
+body{
+  background-color: $colorDarkest;
+  font-family:Poppins,sans-serif;
+}
+
+@function rem($size) {
+  $value: $size;
+  @if(type-of($value)==number) {
+    @return $value/16+rem;
+  }
+  @else {
+    @return $value;
+  }
+}

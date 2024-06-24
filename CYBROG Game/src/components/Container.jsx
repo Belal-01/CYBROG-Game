@@ -1,7 +1,7 @@
-const Container = () => {
+const Container = (props) => {
   return (
-    <div>
-      <h1>Container</h1>
+    <div className="main__container">
+      {props.children}
     </div>
   )
 }
