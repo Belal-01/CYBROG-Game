@@ -13,6 +13,10 @@ body{
   background-color: $colorDarkest;
   font-family:Poppins,sans-serif;
 }
+*{
+  margin:0;
+  padding:0;
+}
 
 @function rem($size) {
   $value: $size;
@@ -23,3 +27,20 @@ body{
     @return $value;
   }
 }
+
+@mixin section-wrapper($width,$bg-color,$hrPadding,$vrPadding){
+  min-width:rem($width);
+  background-color:$bg-color;
+  padding:rem($hrPadding) rem($vrPadding);
+  border-radius:rem($hrPadding/2);
+}
+@mixin flex($direction,$justifyContent,$alignItems,$gap){
+  display: flex;
+  flex-direction: $direction;
+  justify-content:$justifyContent;
+  align-items: $alignItems;
+  column-gap: rem($gap);
+  row-gap: rem($gap);
+}
+
+

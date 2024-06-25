@@ -1,11 +1,7 @@
 .Hero{
-  background: url('assets/images/banner-bg.jpg') no-repeat top right/cover;
+  background: url('../public/images/banner-bg.jpg') no-repeat top right/cover;
   background-position: center;
-  min-width:rem(400);
-  max-width:100%;
-  background-color: $primaryColor;
-  padding:rem($primarypadding) rem(40);
-  border-radius: rem($disprimary/2);
+  @include section-wrapper(400,$colorDarkest,$primarypadding,40);
   &__text{
     color:white;
     font-size: rem($disprimary/2);

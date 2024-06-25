@@ -4,17 +4,31 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .Cybrog-navbar {
   background-color: #1f2122;
   min-height: 6.25rem;
 }
 
+.main__container {
+  width: 80%;
+  margin: auto;
+  padding: 3.125rem;
+  min-width: 33.75rem;
+  max-width: 100%;
+  background-color: #27292a;
+  border-radius: 1.5625rem;
+}
+
 .Hero {
-  background: url("assets/images/banner-bg.jpg") no-repeat top right/cover;
+  background: url("../public/images/banner-bg.jpg") no-repeat top right/cover;
   background-position: center;
   min-width: 25rem;
-  max-width: 100%;
-  background-color: #ec6090;
+  background-color: #1f2122;
   padding: 3.125rem 2.5rem;
   border-radius: 1.5625rem;
 }
@@ -37,12 +51,78 @@ body {
   color: white;
 }
 
-.main__container {
-  width: 80%;
-  margin: auto;
-  padding: 3.125rem;
-  min-width: 33.75rem;
-  max-width: 100%;
+.card {
+  min-width: 12.5rem;
   background-color: #27292a;
+  padding: 1.5625rem 0.78125rem;
+  border-radius: 0.78125rem;
+  color: white;
+  flex: 1;
+}
+.card img {
+  border-radius: 0.78125rem;
+  margin-bottom: 0.625rem;
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.625rem;
+  padding: 0;
+  font-size: 0.875rem;
+}
+.card-body__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.625rem;
+}
+.card-body__info__state {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-body__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.625rem;
+}
+
+.most-popular__wrapper {
+  color: white;
+  min-width: 25rem;
+  background-color: #1f2122;
+  padding: 3.125rem 2.5rem;
   border-radius: 1.5625rem;
+  margin-top: 3.125rem;
+}
+.most-popular__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5625rem;
+}
+.most-popular__title a {
+  color: white;
+}
+.most-popular__title span {
+  color: #ec6090;
+}
+.most-popular__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.625rem;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=App.css.map */

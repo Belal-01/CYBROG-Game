@@ -1,0 +1,28 @@
+.card{
+  @include section-wrapper(200,$colorDark,$primarypadding/2,$primarypadding/4);
+  color:$colorlight;
+  flex:1;
+  img{
+    border-radius: rem($disprimary/4);
+    margin-bottom: rem($primarymargin/5);
+  }
+  &-body{
+    @include flex(row,space-between,center,10);
+    padding:0;
+    font-size: rem(14);
+    &__info{
+      @include flex(column,start,center,10);
+      &__name{
+        
+      }
+      &__state{
+        color:gray;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+    &__rating{
+      @include flex(column,start,center,10);
+
+    }
+  }
+}

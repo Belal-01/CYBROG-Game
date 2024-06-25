@@ -1,0 +1,24 @@
+@import './card';
+.most-popular{
+  &__wrapper{
+    color:$colorlight;
+    @include section-wrapper(400,$colorDarkest,$primarypadding,40);
+    margin-top:rem($primarymargin); 
+  }
+  &__title{
+    font-size: rem(20) ;
+    font-weight: 700;
+    margin-bottom: rem($primarymargin/2);
+    a{
+      color:$colorlight;
+    }
+    span{
+      color: $primaryColor;
+    }
+  }
+
+ &__cards{
+ @include flex(row,space-between,center,$primarymargin/5);
+ flex-wrap: wrap;
+ }
+}
