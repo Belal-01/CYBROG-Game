@@ -1,0 +1,5 @@
+.section__wrapper{
+  @include section-wrapper(400,$colorDarkest,$primarypadding,40);
+  color:$colorlight;
+  margin-top:rem($primarymargin);
+}

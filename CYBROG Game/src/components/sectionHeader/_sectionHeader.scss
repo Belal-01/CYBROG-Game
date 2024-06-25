@@ -1,0 +1,11 @@
+.section__header{
+  font-size: rem(20) ;
+  font-weight: 700;
+  margin-bottom: rem($primarymargin/2);
+  a{
+    color:$colorlight;
+  }
+  span{
+    color: $primaryColor;
+  }
+}

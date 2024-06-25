@@ -1,5 +1,5 @@
-import logo from '../../public/images/logo.png'
-import NavItem from '../components/NavItem'
+import logo from '../../../public/images/logo.png'
+import NavItem from '../../components/NavItem/NavItem'
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg Cybrog-navbar">

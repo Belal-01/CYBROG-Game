@@ -1,16 +1,19 @@
 import React from 'react'
-import Card from '../components/Card'
+import Card from '../../components/Card/Card'
+import SectionWrapper from '../../components/sectionWrapper/SectionWrapper'
+import SectionHeader from '../../components/sectionHeader/SectionHeader'
+
 
 
 const MostPopular = () => {
   return (
-    <div className='most-popular__wrapper'>
-      <div className="most-popular__title">
-        <span>
+    <SectionWrapper>    
+      <SectionHeader>      
+       
           <a href="#">Most Popular</a>
           <span>  Right Now</span>
-        </span>
-      </div>
+        
+      </SectionHeader>
       <div className="most-popular__cards">
        <Card img={"popular-01"} title={"Fortnite"} state = {"Sandbox"} rating ={4.8} views ={2.3} />
        <Card img={"popular-02"} title={"Fortnite"} state = {"Sandbox"} rating ={4.8} views ={2.3} />
@@ -23,7 +26,7 @@ const MostPopular = () => {
   
       </div>
       
-    </div>
+  </SectionWrapper>
   )
 }
 
