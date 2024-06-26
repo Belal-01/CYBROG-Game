@@ -1,10 +1,11 @@
 import logo from '../../../public/images/logo.png'
 import NavItem from '../../components/NavItem/NavItem'
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg Cybrog-navbar">
-      <div className="container-fluid">
-        <a href="#brand">
+      <div className="container">
+        <a href="/">
           <img src={logo} alt="CYBROG" />
         </a>
         <button className="navbar-toggler bg-light" type="button"
@@ -14,9 +15,7 @@ const Header = () => {
          aria-expanded="false" 
          aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
-        </button>
-
-        
+        </button>        
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <form className="d-flex ms-auto" role="search">
             <input className="form-control ms-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -25,25 +24,26 @@ const Header = () => {
 
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
             <NavItem>
-             <a className="nav-link active text-light" aria-current="page" href="#">Home</a>
+              <Link to="/" className="nav-link active text-light">Home</Link>
             </NavItem>
              
             <NavItem>
-            <a className="nav-link text-light" href="#">Browse</a>
+            <a className="nav-link text-light" href="/#">Browse</a>
             </NavItem>
                           
             <NavItem>
-              <a className="nav-link text-light" href="#">
+              <a className="nav-link text-light" href="/#">
                 Details
               </a>
             </NavItem>
                         
             <NavItem>
-            <a className="nav-link  text-light" aria-disabled="true">Streams</a>
+            <a className="nav-link  text-light" href='/#'>Streams</a>
             </NavItem>
                          
             <NavItem>
-            <a className="nav-link  text-light" aria-disabled="true">Portfolio</a>
+             <Link to="/profile" className="nav-link active text-light">Profile</Link>
+
             </NavItem>
                         
           </ul>

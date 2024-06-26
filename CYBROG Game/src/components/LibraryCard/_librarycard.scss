@@ -1,0 +1,17 @@
+.Library-card{
+  @include section-wrapper(300,$colorDarkest,$primarypadding/4,$primarypadding/4);
+  @include flex(row,space-between,center,0);
+  flex-wrap: wrap;
+  &::after{
+    @include horizontal-line(1,$primaryColor);
+    margin-top: rem(25);
+  }
+  
+  img{
+    width:rem(100);
+    border-radius: rem($disprimary/2);
+  }  
+  span{
+    color:gray; 
+  }
+}

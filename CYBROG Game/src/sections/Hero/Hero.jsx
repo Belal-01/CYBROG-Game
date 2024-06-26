@@ -1,19 +1,27 @@
+import PrimaryButton from "../../components/buttons/Buttons"
+import SectionWrapper from "../../components/sectionWrapper/SectionWrapper"
 
 const Hero = () => {
+  const styles = {
+    backgroundImage: "url('../public/images/banner-bg.jpg')",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "top right",
+    backgroundSize: "cover",
+    backgroundPositionX: "center",
+  };
   return (
-    <main className="Hero">
-      <div className="Hero__text">
-        Welcome To Cyborg
-      </div>
-      <div className="Hero__title">
-       <span>BROWSE</span>  OUR<br /> POPULAR  GAMES HERE
-      </div>
-      <div className="Hero__button">
-        <button className="btn">
-          Browse Now
-        </button>
-      </div>
-    </main>
+    <SectionWrapper style ={styles}>
+        <div className="Hero__text">
+          Welcome To Cyborg
+        </div>
+        <div className="Hero__title">
+        <span>BROWSE</span>  OUR<br /> POPULAR  GAMES HERE
+        </div>
+          <PrimaryButton>
+            Browse Now
+          </PrimaryButton>
+    </SectionWrapper>
+ 
   )
 }
 

@@ -1,0 +1,11 @@
+footer{
+  color:$colorlight;
+  text-align: center;
+  margin: rem($disprimary/2) 0;
+  a{
+    color:$colorlight;
+  }
+  a:hover{
+    color: $primaryColor;
+  }
+}

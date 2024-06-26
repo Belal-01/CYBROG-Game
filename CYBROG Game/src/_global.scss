@@ -7,8 +7,6 @@ $disprimary:50;
 $bodyBGColor:$colorDarkest;
 $primarypadding:$disprimary;
 $primarymargin :$disprimary;
-
-
 body{
   background-color: $colorDarkest;
   font-family:Poppins,sans-serif;
@@ -41,6 +39,13 @@ body{
   align-items: $alignItems;
   column-gap: rem($gap);
   row-gap: rem($gap);
+}
+@mixin horizontal-line($height,$color){
+  content: "";
+  display: block;
+  width: 100%;
+  height:rem($height);
+  background-color: $color;
 }
 
 

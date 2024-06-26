@@ -1,0 +1,29 @@
+.button a{
+  padding:rem($disprimary/4) rem($disprimary/2) ;
+  color:$colorlight;
+  border-radius: rem($disprimary/2);
+  font-size: rem(14);
+  letter-spacing: rem(0.5);
+  text-decoration: none;
+  transition: all .3s;
+
+}
+
+.primary-button a{
+  background-color: $primaryColor;
+
+}
+.primary-button a:hover{
+  background-color: $colorlight;
+  color:$primaryColor;
+}
+.secondary-button a{
+ color:$primaryColor;
+ background-color: transparent;
+ border:rem(1) solid $primaryColor;
+}
+.secondary-button a:hover{
+background-color: $colorlight;
+color:$primaryColor;
+border:none;
+}
