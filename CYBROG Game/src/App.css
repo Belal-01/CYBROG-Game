@@ -14,7 +14,7 @@ body {
   background-color: #27292a;
   padding: 1.5625rem 0.78125rem;
   border-radius: 0.78125rem;
-  color: white;
+  color: #fff;
   flex: 1;
 }
 .card img {
@@ -63,6 +63,7 @@ body {
   max-width: 100%;
   background-color: #27292a;
   border-radius: 1.5625rem;
+  margin-top: 3.125rem;
 }
 
 .section__wrapper {
@@ -70,7 +71,7 @@ body {
   background-color: #1f2122;
   padding: 3.125rem 2.5rem;
   border-radius: 1.5625rem;
-  color: white;
+  color: #fff;
   margin-bottom: 3.125rem;
 }
 
@@ -80,7 +81,7 @@ body {
   margin-bottom: 1.5625rem;
 }
 .section__header a {
-  color: white;
+  color: #fff;
 }
 .section__header span {
   color: #ec6090;
@@ -95,9 +96,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 0rem;
-       column-gap: 0rem;
-  row-gap: 0rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  row-gap: 1.25rem;
   flex-wrap: wrap;
 }
 .Library-card::after {
@@ -106,7 +107,6 @@ body {
   width: 100%;
   height: 0.0625rem;
   background-color: #ec6090;
-  margin-top: 1.5625rem;
 }
 .Library-card img {
   width: 6.25rem;
@@ -116,9 +116,43 @@ body {
   color: gray;
 }
 
+@media screen and (min-width: 750px) and (max-width: 1150px) {
+  .Library-card > * {
+    flex: 1 1 25%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 750px) {
+  .Library-card {
+    justify-content: space-between;
+  }
+  .Library-card__img {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .Library-card__button {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .Library-card__name {
+    flex: 1 1 35%;
+    text-align: center;
+  }
+  .Library-card__spended-time {
+    flex: 1 1 35%;
+    text-align: center;
+  }
+  .Library-card__date-join {
+    flex: 1 1 35%;
+    text-align: center;
+  }
+  .Library-card__game-state {
+    flex: 1 1 35%;
+    text-align: center;
+  }
+}
 .button a {
   padding: 0.78125rem 1.5625rem;
-  color: white;
+  color: #fff;
   border-radius: 1.5625rem;
   font-size: 0.875rem;
   letter-spacing: 0.03125rem;
@@ -131,7 +165,7 @@ body {
 }
 
 .primary-button a:hover {
-  background-color: white;
+  background-color: #fff;
   color: #ec6090;
 }
 
@@ -142,16 +176,163 @@ body {
 }
 
 .secondary-button a:hover {
-  background-color: white;
+  background-color: #fff;
   color: #ec6090;
   border: none;
 }
 
-.Cybrog-navbar {
-  background-color: #1f2122;
-  min-height: 6.25rem;
+.nav-list-item {
+  text-align: center;
+}
+.nav-list-item a {
+  color: #666;
+}
+.nav-list-item a:hover {
+  color: #ec6090;
+}
+.nav-list-item .nav-item.active {
+  color: #ec6090; /* Change this to the desired color */
 }
 
+@media (max-width: 990px) {
+  .nav-list-item {
+    text-align: center;
+  }
+  .nav-list-item a {
+    color: #27292a;
+  }
+  .nav-list-item a:hover {
+    color: #ec6090;
+  }
+  .nav-list-item::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 0.0625rem;
+    background-color: #666;
+    margin-left: 20%;
+  }
+}
+.Cybrog-navbar {
+  background-color: #1f2122;
+  min-height: 5rem;
+}
+.Cybrog-navbar .inter-nav__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.625rem;
+  background-color: #27292a;
+  color: #666;
+  width: 13.75rem;
+  height: 46px;
+  border-radius: 23px;
+  border: none;
+  font-size: 14px;
+  padding-left: 0.625rem;
+  margin-left: 7.5rem;
+}
+.Cybrog-navbar .inter-nav__search input {
+  background-color: transparent;
+  border: none;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.Cybrog-navbar .inter-nav__search input::-moz-placeholder {
+  color: #666;
+}
+.Cybrog-navbar .inter-nav__search input::placeholder {
+  color: #666;
+}
+.Cybrog-navbar .inter-nav__search span {
+  border-right: 0.0625rem solid #666;
+  color: #666;
+  font-size: 20px;
+  padding: 0 0.3125rem;
+}
+
+.toggler-button {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #fff;
+  border: none;
+  padding-top: 0.9375rem;
+}
+.toggler-button__text::before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 0.125rem;
+  background-color: #ec6090;
+}
+.toggler-button__text::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 0.125rem;
+  background-color: #ec6090;
+  margin-top: 0.4375rem;
+}
+.toggler-button__text2::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 0.125rem;
+  background-color: #ec6090;
+  margin-top: 0.4375rem;
+}
+
+@media (min-width: 995px) {
+  .collaps-section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 0.3125rem;
+         column-gap: 0.3125rem;
+    row-gap: 0.3125rem;
+  }
+  .collaps-section ul .profile-Wrapper {
+    min-width: 6.25%rem;
+    background-color: #27292a;
+    padding: 0.2604166667rem 0.78125rem;
+    border-radius: 0.1302083333rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -moz-column-gap: 0.3125rem;
+         column-gap: 0.3125rem;
+    row-gap: 0.3125rem;
+    background-color: #27292a;
+    color: #666;
+    border-radius: 1.5625rem;
+  }
+  .collaps-section ul .profile-Wrapper img {
+    width: 1.875rem;
+    border-radius: 1.5625rem;
+  }
+  .collaps-section ul .profile-Wrapper:hover {
+    background-color: #ec6090;
+  }
+  .collaps-section ul .profile-Wrapper:hover a {
+    color: #fff;
+  }
+}
+@media (max-width: 995px) {
+  .Cybrog-navbar {
+    background-color: #fff;
+  }
+  .inter-nav__search {
+    opacity: 0;
+  }
+  .profile-Wrapper img {
+    display: none;
+  }
+}
 .Hero__text {
   color: white;
   font-size: 1.5625rem;
@@ -160,7 +341,7 @@ body {
 .Hero__title {
   font-size: 3.125rem;
   font-weight: 800;
-  color: white;
+  color: #fff;
   padding-bottom: 1.25rem;
 }
 .Hero__title span {
@@ -179,12 +360,12 @@ body {
 }
 
 footer {
-  color: white;
+  color: #fff;
   text-align: center;
   margin: 1.5625rem 0;
 }
 footer a {
-  color: white;
+  color: #fff;
 }
 footer a:hover {
   color: #ec6090;

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
 $primaryColor:#ec6090;
 $colorDark:#27292a;
-$colorlight:white;
+$colorlight:#fff;
 $colorDarkest:#1f2122;
+$textColor:#666;
 $disprimary:50;
 $bodyBGColor:$colorDarkest;
 $primarypadding:$disprimary;
 $primarymargin :$disprimary;
+
 body{
   background-color: $colorDarkest;
   font-family:Poppins,sans-serif;
@@ -40,10 +42,10 @@ body{
   column-gap: rem($gap);
   row-gap: rem($gap);
 }
-@mixin horizontal-line($height,$color){
+@mixin horizontal-line($height,$color,$width){
   content: "";
   display: block;
-  width: 100%;
+  width: $width;
   height:rem($height);
   background-color: $color;
 }

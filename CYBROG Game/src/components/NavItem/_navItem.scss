@@ -1,0 +1,31 @@
+.nav-list-item{
+  text-align: center;
+    a{
+      color:$textColor;
+    }
+    a:hover{
+      color:$primaryColor;
+    }
+    .nav-item.active {
+      color: $primaryColor; /* Change this to the desired color */
+    }
+ 
+}
+
+
+@media (max-width:990px){
+  .nav-list-item{
+    text-align: center;
+    a{
+      color:$colorDark;
+    }
+    a:hover{
+      color: $primaryColor;
+    }
+  }
+  .nav-list-item::after{
+    @include horizontal-line(1,$textColor,60%);
+    margin-left: 20%;
+  }
+  
+}

@@ -1,4 +1,97 @@
 .Cybrog-navbar{
   background-color: $colorDarkest;
-  min-height: rem(100);
+   min-height: rem(80);
+  .inter-nav{
+    &__search{
+      @include flex(row,start,center,10);
+      background-color: $colorDark;
+      color: $textColor;
+      width:rem(220);
+      height: 46px;
+      border-radius: 23px;
+      border: none;
+      font-size: 14px;
+      padding-left: rem(10);
+      margin-left: rem(120);
+      input{
+        background-color: transparent;
+        border: none;
+        font-size: rem(14);
+        color:$colorlight;
+        &::placeholder {
+          color: $textColor;
+        }
+      }
+      span{
+        border-right:rem(1) solid $textColor;
+        color:$textColor;
+        font-size: 20px;
+        padding:0 rem(5);
+      }
+   
+    }
+  }
+
+}
+
+.toggler-button{
+ width:rem(50);
+ height:rem(50);
+ background-color: $colorlight;
+ border:none;
+padding-top: rem(15);
+
+ &__text::before{
+  @include horizontal-line(2,$primaryColor,90%);
+
+ }
+ &__text::after{
+  @include horizontal-line(2,$primaryColor,120%);
+  margin-top:rem(7);
+ }
+ &__text2::after{
+  @include horizontal-line(2,$primaryColor,90%);
+  margin-top:rem(7);
+ }
+
+
+}
+@media (min-width:995px){
+  .collaps-section ul{
+    @include flex(row,space-between,center,5);
+    .profile-Wrapper{
+      @include section-wrapper(100%,$colorDark,$disprimary/12,$disprimary/4);
+      @include flex(row,space-between,center,5);
+      background-color: $colorDark;
+      color:$textColor;
+      border-radius:rem($disprimary/2);
+      img{
+        width:rem(30);
+        border-radius:rem($disprimary/2);
+      }
+      &:hover{
+        background-color: $primaryColor;
+        a{
+          color:$colorlight;
+  
+        }
+      }
+    }
+  
+  }
+}
+
+
+
+@media (max-width:995px){
+  .Cybrog-navbar{
+    background-color: $colorlight;     
+  }
+  .inter-nav__search{
+    opacity: 0;
+  }
+  .profile-Wrapper img{
+    display: none;
+  }
+  
 }

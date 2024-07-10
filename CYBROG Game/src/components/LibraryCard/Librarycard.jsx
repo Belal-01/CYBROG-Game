@@ -2,8 +2,10 @@ import React from 'react'
 import { SecondaryButton } from '../buttons/Buttons'
 const Librarycard = () => {
   return (
+    <>
+   
     <div className="Library-card">
-      <div className="Library-card__img">
+       <div className="Library-card__img">
        <img src="../../../public/images/popular-01.jpg" alt="cardImg" />
       </div>
       <div className="Library-card__name">
@@ -22,8 +24,12 @@ const Librarycard = () => {
         <h6>Currently</h6>
         <span>Downloaded</span>
       </div>
-      <SecondaryButton>Download</SecondaryButton>
+      <div className='Library-card__button'>
+       <SecondaryButton>Download</SecondaryButton>
+      </div>
     </div>
+
+   </>
   )
 }
 

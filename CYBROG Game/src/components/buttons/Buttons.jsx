@@ -16,8 +16,8 @@ const SecondaryButton = (props) => {
   return (
     <div>
         <div className='button secondary-button'>
-      <a href="/#">{props.children}</a>    
-    </div>
+          <a href="/#">{props.children}</a>    
+        </div>
     </div>
   )
 }

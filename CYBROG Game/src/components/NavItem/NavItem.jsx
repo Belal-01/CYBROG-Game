@@ -1,8 +1,7 @@
 
-
 const NavItem = (props) => {
   return (
-    <li className="nav-item">
+    <li className="nav-item nav-list-item">
       {props.children}
     </li>
   )
