@@ -1,7 +1,7 @@
 import React from 'react'
-import SectionWrapper from '../../components/sectionWrapper/SectionWrapper'
-import SectionHeader from '../../components/sectionHeader/SectionHeader'
-import Librarycard from '../../components/LibraryCard/Librarycard'
+import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper'
+import SectionHeader from '../../../components/sectionHeader/SectionHeader'
+import Librarycard from '../../../components/LibraryCard/Librarycard'
 const GameLibrary = () => {
   return (
     <SectionWrapper>

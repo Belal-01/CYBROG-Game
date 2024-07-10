@@ -186,12 +186,14 @@ body {
 }
 .nav-list-item a {
   color: #666;
+  text-decoration: none;
 }
 .nav-list-item a:hover {
   color: #ec6090;
 }
-.nav-list-item .nav-item.active {
-  color: #ec6090; /* Change this to the desired color */
+
+li.isClicked a {
+  color: #ec6090;
 }
 
 @media (max-width: 990px) {
@@ -285,15 +287,15 @@ body {
   margin-top: 0.4375rem;
 }
 
-@media (min-width: 995px) {
+@media (min-width: 992px) {
   .collaps-section ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    -moz-column-gap: 0.3125rem;
-         column-gap: 0.3125rem;
-    row-gap: 0.3125rem;
+    -moz-column-gap: 0.9375rem;
+         column-gap: 0.9375rem;
+    row-gap: 0.9375rem;
   }
   .collaps-section ul .profile-Wrapper {
     min-width: 6.25%rem;
@@ -322,7 +324,7 @@ body {
     color: #fff;
   }
 }
-@media (max-width: 995px) {
+@media (max-width: 991px) {
   .Cybrog-navbar {
     background-color: #fff;
   }

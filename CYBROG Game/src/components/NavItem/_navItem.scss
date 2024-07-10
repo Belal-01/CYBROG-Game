@@ -2,14 +2,15 @@
   text-align: center;
     a{
       color:$textColor;
+      text-decoration: none;
     }
     a:hover{
       color:$primaryColor;
     }
-    .nav-item.active {
-      color: $primaryColor; /* Change this to the desired color */
-    }
  
+}
+li.isClicked a{
+  color: $primaryColor;
 }
 
 

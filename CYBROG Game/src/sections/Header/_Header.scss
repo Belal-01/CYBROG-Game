@@ -39,7 +39,7 @@
  height:rem(50);
  background-color: $colorlight;
  border:none;
-padding-top: rem(15);
+  padding-top: rem(15);
 
  &__text::before{
   @include horizontal-line(2,$primaryColor,90%);
@@ -56,9 +56,9 @@ padding-top: rem(15);
 
 
 }
-@media (min-width:995px){
+@media (min-width:992px){
   .collaps-section ul{
-    @include flex(row,space-between,center,5);
+    @include flex(row,space-between,center,15);
     .profile-Wrapper{
       @include section-wrapper(100%,$colorDark,$disprimary/12,$disprimary/4);
       @include flex(row,space-between,center,5);
@@ -83,7 +83,7 @@ padding-top: rem(15);
 
 
 
-@media (max-width:995px){
+@media (max-width:991px){
   .Cybrog-navbar{
     background-color: $colorlight;     
   }

@@ -1,8 +1,8 @@
 import React from 'react'
-import Card from '../../components/Card/Card'
-import SectionWrapper from '../../components/sectionWrapper/SectionWrapper'
-import SectionHeader from '../../components/sectionHeader/SectionHeader'
-import { gamesInfo } from '../../../firebase'
+import Card from '../../../components/Card/Card'
+import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper'
+import SectionHeader from '../../../components/sectionHeader/SectionHeader'
+import { gamesInfo } from '../../../../firebase'
 import { onSnapshot } from 'firebase/firestore'
 
 
