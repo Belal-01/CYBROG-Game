@@ -1,0 +1,71 @@
+.profile-hero{
+  @include flex(row,space-between,center,20);
+  flex-wrap: wrap;
+  padding-bottom:rem(30);
+  &__img{
+    min-width: rem(250);
+
+  }
+  &__img img{
+    width: 100%;
+    border-radius: rem(30);
+  }
+  &__info{
+    @include flex(column ,start,start,30);
+    min-width:rem(190);
+
+    &--name{
+      font-size: rem(20);
+      font-weight: bold;
+    }
+    p{ 
+      font-size: rem(14);
+      font-weight: 400;
+      color:$textColor;
+    }
+  }
+  &__details{
+    @include section-wrapper(210,$colorDark,20 ,30);
+    border-radius: rem(30);
+    width: rem(300);
+    &--value{
+      color: $primaryColor;
+    }
+    ul>li{
+      @include flex(row ,space-between,center,0);
+      font-size: rem(15);
+      color:$textColor;
+      padding:rem(8) rem(0);
+    }
+    ul{
+      padding:0;
+      list-style-type: none ;
+      margin: 0;
+    }
+  }
+}
+.profile-clips{
+  @include flex(row,space-between,center,20);
+  flex-wrap: wrap;
+}
+.load-clips-button{
+  margin-top:rem(40);
+  text-align: center;
+}
+
+@media (min-width: 1120px) {
+  .profile-hero>*{
+    flex:1 1 28%;
+    }
+  .profile-hero{
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1119px) {
+  .profile-hero>*{
+  flex:1 1 55%;
+  }
+.profile-hero{
+  row-gap: rem(40);
+}
+}

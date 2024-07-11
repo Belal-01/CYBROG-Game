@@ -1,5 +1,5 @@
-import PrimaryButton from "../../components/buttons/Buttons"
-import SectionWrapper from "../../components/sectionWrapper/SectionWrapper"
+import PrimaryButton from "../../../components/buttons/Buttons"
+import SectionWrapper from "../../../components/sectionWrapper/SectionWrapper"
 
 const Hero = () => {
   const styles = {

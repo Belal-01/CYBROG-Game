@@ -1,50 +1,78 @@
 import React from 'react'
 import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper'
 import Container from '../../../components/Container/Container'
-import { SecondaryButton } from '../../../components/buttons/Buttons'
+import PrimaryButton, { SecondaryButton } from '../../../components/buttons/Buttons'
+import SectionHeader from '../../../components/sectionHeader/SectionHeader'
+import Clip from '../../../components/ProfileClip/Clip'
 
 const ProfileHero = () => {
   return (
-    <>
     <SectionWrapper>
-      <div className="profile-hero__img">
-        <img src="../../../../public/images/profile.jpg" alt="profile Img" />
-      </div>
-      <div className="profile-hero__info">
-        <SecondaryButton>
-          Offline
-        </SecondaryButton>
-        <div className="profile-hero__info--name"></div>
-        <p>You Haven't Gone Live yet. Go Live By Touching The Button Below.</p>
-        <SecondaryButton>
-          Start Live Stream
-        </SecondaryButton>
+      <div className="profile-hero">      
+        <div className="profile-hero__img">
+          <img src="../../../../public/images/profile.jpg" alt="profile Img" />
+        </div>
+        <div className="profile-hero__info">
+          <PrimaryButton>
+            Offline
+          </PrimaryButton>
+          <div className="profile-hero__info--name">Belal khubieh</div>
+          <p>You Haven't Gone Live yet. Go Live By Touching The Button Below.</p>
+          <SecondaryButton>
+            Start Live Stream
+          </SecondaryButton>
 
-      </div>
-      <Container>
-        <ul>
-          <li>
-            <span>Games Downloaded</span>
-            <span>3</span>
-          </li>
-          <li>
-            <span>Friends Online</span>
-            <span>16</span>
-          </li>
-          <li>
-            <span>Live Streams</span>
-            <span>None</span>
-          </li>
-          <li>
-            <span>Clips</span>
-            <span>29</span>
-          </li>
+        </div>
+        <div className='profile-hero__details'>
+          <ul>
+            <li>
+              <span>Games Downloaded</span>
+              <span className='profile-hero__details--value'>3</span>
+            </li>
+            <hr/>
+            <li>
+              <span>Friends Online</span>
+              <span className='profile-hero__details--value'>16</span>
+            </li>
+            <hr/>
 
-        </ul>
-      </Container>
+            <li>
+              <span>Live Streams</span>
+              <span className='profile-hero__details--value'>None</span>
+            </li>
+            <hr/>
+
+            <li>
+              <span>Clips</span>
+              <span className='profile-hero__details--value'>29</span>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+
+      <hr/>
+
+      <SectionHeader>
+        <a href="/profile">Your Most Popular </a>
+        <span>Clips</span>
+      </SectionHeader>
+      <div className="profile-clips">
+        <Clip />
+        <Clip />
+        <Clip />
+        <Clip />
+      </div>
+      <div className="load-clips-button">
+        <PrimaryButton>
+          Load more clips
+        </PrimaryButton>
+      </div>
+
     </SectionWrapper>
       
-    </>
+  
   )
 }
 

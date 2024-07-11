@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { CiSearch } from "react-icons/ci";
 import profile from "../../../public/images/profile-header.jpg"
 const Header = () => {
-  const [navItemState,setNavItemState] = React.useState([
+  const [navItemState,setNavItemState] = React.useState(()=>JSON.parse(localStorage.getItem('navArray'))||[
     {   
       name:'Home',
       isActiv:true
@@ -34,6 +34,7 @@ const Header = () => {
         }
         newArray.push(nav)
       })
+      localStorage.setItem('navArray',JSON.stringify(newArray))
       setNavItemState(newArray)
     
     }
@@ -89,15 +90,10 @@ const Header = () => {
               <Link to="/profile" >Profile</Link>
             </NavItem>
             <img src={profile} alt="" />
-            </div>             
-           
-                        
+            </div>                                   
           </ul>
         
-        </div>
-
-
-        
+        </div>       
       
       </div>
     </nav>

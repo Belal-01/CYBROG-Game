@@ -1,14 +1,14 @@
 import React from 'react'
-import Hero from '../../sections/Hero/Hero'
-import MostPopular from '../../sections/Home-sections/Most Popular/MostPopular'
+
+import ProfileHero from '../../sections/profile-sections/profile-Heroo/ProfileHero'
 import GameLibrary from '../../sections/Home-sections/GameLibrary/GameLibrary'
 
 const Profile = () => {
   return (
    <>
       
-      <MostPopular />
-      <GameLibrary />
+     <ProfileHero />
+     <GameLibrary />
     
    </>
   )
