@@ -49,5 +49,13 @@ body{
   height:rem($height);
   background-color: $color;
 }
+@mixin box-container($color,$bgcolor,$hrpadding,$vrpadding,$opacity){
+  font-size: rem(14);
+  color: $color;
+  padding: rem($hrpadding) rem($vrpadding);
+  border-radius: rem(2*$hrpadding);
+  background-color:$bgcolor;
+  opacity: $opacity;
+}
 
 

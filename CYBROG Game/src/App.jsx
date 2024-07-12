@@ -19,7 +19,6 @@ const App = () => {
            <Route path="/" element={<Home/>} />
            <Route path="/profile" element={<Profile/>} />
            <Route path="/Streams" element={<Streams/>} />
-
           </Routes>
         </Container>
       <Footer />

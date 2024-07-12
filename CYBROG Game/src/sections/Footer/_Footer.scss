@@ -1,6 +1,5 @@
 footer{
   color:$colorlight;
-  text-align: center;
   margin: rem($disprimary/2) 0;
   a{
     color:$colorlight;
@@ -8,4 +7,7 @@ footer{
   a:hover{
     color: $primaryColor;
   }
+}
+.footer{
+  text-align: center;
 }

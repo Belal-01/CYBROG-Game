@@ -2,4 +2,6 @@
   @include section-wrapper(400,$colorDarkest,$primarypadding,40);
   color:$colorlight;
   margin-bottom:rem($primarymargin);
+  position: relative;
+
 }

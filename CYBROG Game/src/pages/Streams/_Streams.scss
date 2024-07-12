@@ -1,0 +1,38 @@
+
+  @media (min-width: 1024px) {
+    .liveStream-Wrapper{
+      flex:1 1 59%;
+    }
+    .topStreamers-Wrapper{
+     flex:1 1 35%;
+    }
+    .liveStream{
+      flex:1 1 20%;
+    }
+    }
+  @media screen and (min-width: 500px) and (max-width: 1080px) {
+    .liveStream-Wrapper{
+      flex:1 1 60%;
+    }
+    .topStreamers-Wrapper{
+     flex:1 1 60%;
+  
+    }
+    .liveStream{
+      flex:1 1 40%;
+    }
+  
+    
+  }
+  @media screen and (min-width: 0px) and (max-width: 500px) {
+    .liveStream-Wrapper{
+      flex:1 1 60%;
+    }
+    .topStreamers-Wrapper{
+     flex:1 1 60%;  
+    }
+    .liveStream{
+      flex:1 1 60%;
+    }
+    
+  }

@@ -1,0 +1,23 @@
+.liveStream-container{
+  @include flex(row ,space-between ,start,20);
+  flex-wrap: wrap;
+}
+.liveStream-Wrapper{
+  min-width:rem(400);
+  background-color:$colorDarkest;
+  padding:rem(20) rem(20);
+  border-radius:rem(30/2); 
+  flex-shrink: 0; 
+  margin-bottom: rem(30);
+}
+.topStreamers-Wrapper{
+  min-width:rem(250);
+  background-color:$colorDarkest;
+  padding:rem(20) rem(20);
+  border-radius:rem(30/2);
+  flex-shrink: 2;  
+  margin-bottom: rem(30);
+
+}
+
+

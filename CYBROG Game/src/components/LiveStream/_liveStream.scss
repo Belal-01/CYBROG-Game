@@ -1,0 +1,65 @@
+.liveStream{
+  @include section-wrapper(160,$colorDarkest,0,0);
+  &__img{
+    position: relative;
+    @include flex(column,center,center,0);
+    &:hover{
+      .streamser-views>span ,.streamer-live{
+        opacity: 0.9;
+      }
+    }
+
+    img{
+      width:100%;
+      border-radius: rem($disprimary/1.5);
+    }
+  }
+  &__body{
+    @include flex(row ,space-between,start,15);
+    padding:rem(15) rem(10);
+    &--img{
+      flex:1 1 25%;
+      img{
+        width: 100%;
+        border-radius: rem($disprimary/2);
+      }
+    }
+    &--info{
+      flex:1 1 70%;
+      &-name{
+        color:$primaryColor;
+        font-size: rem(15);
+        margin-bottom: rem(10);
+        span:First-child{
+          font-size: rem(20);
+        }
+
+      }
+      &-state{
+        font-size: rem(18);
+      }
+    }
+  }
+}
+.streamser-views{
+  & span{
+    @include box-container($colorlight,$primaryColor,5,8,0);
+    border-radius: rem(15);
+    margin-right:rem(5);
+    transition: opacity 0.4s;
+  }
+  position: absolute;
+  bottom:rem(20);
+}
+.streamer-live{
+  @include box-container($colorlight,$primaryColor,5,10,0);
+  border-radius: rem(15);
+  position: absolute;
+  top:rem(35);
+  right:rem(20);
+  transition: opacity 0.4s;
+
+}
+
+
+

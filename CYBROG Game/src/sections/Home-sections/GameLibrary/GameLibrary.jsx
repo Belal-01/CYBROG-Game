@@ -7,7 +7,7 @@ const GameLibrary = () => {
     <SectionWrapper>
       <SectionHeader>
         <a href="#">Your Gaming </a>
-        <span> Library</span>
+        <span> &nbsp;Library</span>
       </SectionHeader>
       <Librarycard />
       <Librarycard />

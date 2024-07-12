@@ -1,0 +1,12 @@
+.mostPopular__liveStreams{
+  @include flex(row,space-between,center,15);
+  flex-wrap: wrap;
+  &--button{
+    width: 100%;
+    @include flex(row,space-around,center,0);
+    position: absolute;
+    bottom: rem(-15);
+    padding-right: rem(60);
+
+  }
+}

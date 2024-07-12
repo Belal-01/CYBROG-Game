@@ -82,7 +82,7 @@ const Header = () => {
             </NavItem >
                         
             <NavItem handelClick={handelClick} name={'Streams'} isActiv={navItemState[3].isActiv}>
-              <a  href='/Streams'>Streams</a>
+              <Link  to='/Streams'>Streams</Link>
             </NavItem>
 
             <div className='profile-Wrapper'>

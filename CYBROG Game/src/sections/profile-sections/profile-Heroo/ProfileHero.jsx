@@ -56,7 +56,7 @@ const ProfileHero = () => {
 
       <SectionHeader>
         <a href="/profile">Your Most Popular </a>
-        <span>Clips</span>
+        <span>&nbsp;Clips</span>
       </SectionHeader>
       <div className="profile-clips">
         <Clip />
