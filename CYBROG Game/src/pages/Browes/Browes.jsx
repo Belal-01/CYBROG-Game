@@ -1,20 +1,19 @@
 import React from 'react'
 import LiveStreams from '../../sections/Streams-sections/LiveStreams/LiveStreams'
+import TopDownloading from '../../components/TopDownloading/TopDownloading'
 import PopularLiveStreamers from '../../sections/Streams-sections/MostPopularLiveStreamers/PopularLiveStreamers'
-import TopStreamer from '../../components/topStreamers/TopStreamer'
 
-const Streams = () => {
+const Browes = () => {
   return (
     <div>
     <div className='liveStream-container'>
-      <LiveStreams 
-       FirstTitle="Live" SecondTitle= "Streams"
-     />
-      <TopStreamer />
-    </div>
+      <LiveStreams FirstTitle ="Featured" SecondTitle="Game"/>
+      <TopDownloading />
+
       <PopularLiveStreamers />
+    </div>
     </div>
   )
 }
 
-export default Streams
+export default Browes

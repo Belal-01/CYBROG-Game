@@ -1,4 +1,7 @@
-
+.liveStream-container{
+  @include flex(row ,space-between ,start,20);
+  flex-wrap: wrap;
+}
   @media (min-width: 1024px) {
     .liveStream-Wrapper{
       flex:1 1 59%;

@@ -72,7 +72,7 @@ const Header = () => {
             </NavItem>
              
             <NavItem handelClick={handelClick} name={'Browse'} isActiv={navItemState[1].isActiv}>
-              <a href="#">Browse</a>
+              <Link to="/Browse">Browse</Link>
             </NavItem>
                           
             <NavItem handelClick={handelClick} name={'Details'} isActiv={navItemState[2].isActiv}>

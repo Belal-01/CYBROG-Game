@@ -484,6 +484,74 @@ li.isClicked a {
   transition: opacity 0.4s;
 }
 
+.topStreamers-Wrapper {
+  min-width: 15.625rem;
+  background-color: #1f2122;
+  padding: 1.25rem 1.25rem;
+  border-radius: 0.9375rem;
+  flex-shrink: 2;
+  margin-bottom: 1.875rem;
+}
+
+.topDownloadedGame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 0.3125rem;
+       column-gap: 0.3125rem;
+  row-gap: 0.3125rem;
+  color: #fff;
+}
+.topDownloadedGame__info2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.625rem;
+}
+.topDownloadedGame__img img {
+  width: 100%;
+  border-radius: 1.0416666667rem;
+}
+.topDownloadedGame__info {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  -moz-column-gap: 0.125rem;
+       column-gap: 0.125rem;
+  row-gap: 0.125rem;
+}
+.topDownloadedGame__info--name {
+  font-size: 0.9375rem;
+}
+.topDownloadedGame__info--state {
+  color: #666;
+  font-size: 0.875rem;
+}
+.topDownloadedGame__info--rating {
+  font-size: 0.9375rem;
+}
+.topDownloadedGame__download {
+  min-width: 2.5rem;
+  background-color: #27292a;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0rem;
+       column-gap: 0rem;
+  row-gap: 0rem;
+  align-self: end;
+  border-radius: 1.5625rem;
+}
+
 .Cybrog-navbar {
   background-color: #1f2122;
   min-height: 5rem;
@@ -740,32 +808,12 @@ footer a:hover {
     row-gap: 2.5rem;
   }
 }
-.liveStream-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-  row-gap: 1.25rem;
-  flex-wrap: wrap;
-}
-
 .liveStream-Wrapper {
   min-width: 25rem;
   background-color: #1f2122;
   padding: 1.25rem 1.25rem;
   border-radius: 0.9375rem;
   flex-shrink: 0;
-  margin-bottom: 1.875rem;
-}
-
-.topStreamers-Wrapper {
-  min-width: 15.625rem;
-  background-color: #1f2122;
-  padding: 1.25rem 1.25rem;
-  border-radius: 0.9375rem;
-  flex-shrink: 2;
   margin-bottom: 1.875rem;
 }
 
@@ -791,6 +839,17 @@ footer a:hover {
   position: absolute;
   bottom: -0.9375rem;
   padding-right: 3.75rem;
+}
+
+.liveStream-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 1024px) {

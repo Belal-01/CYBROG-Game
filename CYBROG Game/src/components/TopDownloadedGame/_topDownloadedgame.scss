@@ -1,0 +1,33 @@
+.topDownloadedGame{
+  @include flex(row,space-between,center,5);
+  color:$colorlight;
+  &__info2{
+    @include flex(row,start,center,10);
+  }
+  &__img{
+    img{
+      width:100%;
+      border-radius: rem($disprimary/3);
+    }
+  }
+  &__info{
+    justify-self: start;
+    @include flex(column,center,start,2);
+    &--name{
+      font-size: rem(15);
+    }
+    &--state{
+      color:$textColor;
+      font-size: rem(14);
+    }
+    &--rating{
+      font-size: rem(15);
+    }
+  }
+  &__download{
+    @include section-wrapper(40,$colorDark,8,14);
+    @include flex(row,center,center,0);
+    align-self: end;
+    border-radius:rem($disprimary/2);
+  }
+}

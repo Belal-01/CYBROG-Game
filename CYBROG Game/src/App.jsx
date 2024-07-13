@@ -9,6 +9,7 @@ import 'bootstrap/js/dist/collapse'
 import 'bootstrap/js/dist/dropdown'
 import { BrowserRouter as Router,Route,Routes } from "react-router-dom"
 import Streams from "./pages/Streams/Streams"
+import Browes from "./pages/Browes/Browes"
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
            <Route path="/" element={<Home/>} />
            <Route path="/profile" element={<Profile/>} />
            <Route path="/Streams" element={<Streams/>} />
+           <Route path="/Browse" element = {<Browes />} />
           </Routes>
         </Container>
       <Footer />

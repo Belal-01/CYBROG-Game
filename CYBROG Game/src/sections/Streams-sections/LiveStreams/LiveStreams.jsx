@@ -7,10 +7,10 @@ import { gamesInfo } from '../../../../firebase'
 import { onSnapshot } from 'firebase/firestore'
 import Card from '../../../components/Card/Card'
 import StreamsCard from '../../../components/StreamsCard/StreamsCard';
-import Streamer from '../../../components/Streamer/Streamer';
 
-const LiveStreams = () => {
+const LiveStreams = (props) => {
   const [allGamesData, setAllGamesData] = React.useState([]);
+
   React.useEffect(() => {
     const subscrib = onSnapshot(gamesInfo, (snapShot) => {
       const newArray = snapShot.docs.map(doc => ({
@@ -46,13 +46,12 @@ const LiveStreams = () => {
       slidesToSlide: 1 // optional, default to 1.
     }
   };
-  return (
-   
-    <div className='liveStream-container'>
+  return (  
+
       <div className='liveStream-Wrapper'>
         <SectionHeader>
-          <a href="#">Live </a>
-          <span> &nbsp;Streams</span>
+          <a href="#"> {props.FirstTitle} </a>
+          <span> &nbsp; {props.SecondTitle}</span>
         </SectionHeader>
 
         <Carousel
@@ -82,22 +81,8 @@ const LiveStreams = () => {
 
     </div>
 
-    <div className="topStreamers-Wrapper">
-      <SectionHeader>
-        <a href="#">Top </a>
-        <span>&nbsp; Streamers</span>
-      </SectionHeader>
-
-      <Streamer />
-      <Streamer />
-      <Streamer />
-      <Streamer />
-      <Streamer />
-
-
-    </div>
       
-    </div>
+
   )
 }
 
