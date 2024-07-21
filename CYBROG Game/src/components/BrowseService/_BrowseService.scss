@@ -1,0 +1,22 @@
+.BrowseService{
+  @include flex(column,center,Start,20);
+  @include section-wrapper(200,$colorDark,$primarypadding/2,$primarypadding/3);
+
+  color:$colorlight;
+  border:rem(0.3) solid $textColor;
+  border-radius: rem(25);
+  
+  &__img{
+    img{
+      width: rem(60);
+      border-radius: rem(30);
+    }
+  }
+  &__title{
+    font-size: rem(18);
+  }
+  &__info{
+    font-size: rem(14);
+    color:$textColor;
+  }
+}

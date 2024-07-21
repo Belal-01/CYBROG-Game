@@ -552,6 +552,34 @@ li.isClicked a {
   border-radius: 1.5625rem;
 }
 
+.BrowseService {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: Start;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  min-width: 12.5rem;
+  background-color: #27292a;
+  padding: 1.5625rem 1.0416666667rem;
+  border-radius: 0.78125rem;
+  color: #fff;
+  border: 0.01875rem solid #666;
+  border-radius: 1.5625rem;
+}
+.BrowseService__img img {
+  width: 3.75rem;
+  border-radius: 1.875rem;
+}
+.BrowseService__title {
+  font-size: 1.125rem;
+}
+.BrowseService__info {
+  font-size: 0.875rem;
+  color: #666;
+}
+
 .Cybrog-navbar {
   background-color: #1f2122;
   min-height: 5rem;
@@ -841,6 +869,38 @@ footer a:hover {
   padding-right: 3.75rem;
 }
 
+.HowToStart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0rem;
+       column-gap: 0rem;
+  row-gap: 0rem;
+}
+.HowToStart__Services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+  row-gap: 0.9375rem;
+  flex-wrap: wrap;
+}
+.HowToStart__Services--button {
+  width: 100%;
+  margin: 1.875rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0rem;
+       column-gap: 0rem;
+  row-gap: 0rem;
+}
+
 .liveStream-container {
   display: flex;
   flex-direction: row;
@@ -883,5 +943,20 @@ footer a:hover {
   }
   .liveStream {
     flex: 1 1 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .BrowseService {
+    flex: 1 1 30%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1080px) {
+  .BrowseService {
+    flex: 1 1 70%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .BrowseService {
+    flex: 1 1 70%;
   }
 }/*# sourceMappingURL=App.css.map */
