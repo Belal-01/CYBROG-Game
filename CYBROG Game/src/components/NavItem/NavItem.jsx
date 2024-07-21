@@ -2,7 +2,6 @@
 const NavItem = (props) => {
   const name = props.name;
  const isActiv = props.isActiv
- console.log(name + "  "+isActiv)
   return (
     <li className={ `nav-item nav-list-item ${isActiv&& "isClicked"}`} onClick={()=>props.handelClick(name)}>
       {props.children}

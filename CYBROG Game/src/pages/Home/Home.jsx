@@ -6,7 +6,7 @@ import GameLibrary from '../../sections/Home-sections/GameLibrary/GameLibrary'
 const Home = () => {
   return (
     <>
-         <Hero />
+        <Hero />
         <MostPopular />
         <GameLibrary />
     </>

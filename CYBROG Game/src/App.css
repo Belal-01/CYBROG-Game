@@ -959,4 +959,18 @@ footer a:hover {
   .BrowseService {
     flex: 1 1 70%;
   }
+}
+.spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0rem;
+       column-gap: 0rem;
+  row-gap: 0rem;
 }/*# sourceMappingURL=App.css.map */

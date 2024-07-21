@@ -2,25 +2,24 @@ import React from 'react'
 import Card from '../../../components/Card/Card'
 import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper'
 import SectionHeader from '../../../components/sectionHeader/SectionHeader'
-import { gamesInfo } from '../../../../firebase'
-import { onSnapshot } from 'firebase/firestore'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchMostPopularPosts } from './mostPopulat'
 
 
 
 const MostPopular = () => {
-  const [allGamesData, setAllGamesData] = React.useState([]);
+ const popularPosts = useSelector((state)=>{return state.mostPopularPosts})
+
+ const dispatch = useDispatch()
+ 
   React.useEffect(() => {
-    const subscrib = onSnapshot(gamesInfo, (snapShot) => {
-      const newArray = snapShot.docs.map(doc => ({
-        ...doc.data(),
-        id: doc.id
-      }))
-      setAllGamesData(newArray)
-    })
-    return subscrib
+   dispatch(fetchMostPopularPosts())
   }, [])
-  const cardsElement = allGamesData.map(game =>
-    <Card {...game} key={game.id} />
+
+
+  
+  const postsElement = popularPosts.posts.map(post =>
+    <Card {...post} key={post.id} />
   )
   return (
     <SectionWrapper>
@@ -29,7 +28,8 @@ const MostPopular = () => {
         <span> &nbsp; Right Now</span>
       </SectionHeader>
       <div className="most-popular__cards">
-        {cardsElement}
+        {popularPosts.loading && <div>loading...</div>}
+        {postsElement}
       </div>
 
     </SectionWrapper>
