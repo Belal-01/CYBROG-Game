@@ -1,7 +1,7 @@
 .Hero{
   &__text{
     color:white;
-    font-size: rem($disprimary/2);
+    font-size: rem(18);
     padding-bottom: rem($disprimary/2);
 
   }
@@ -9,10 +9,11 @@
     span{
       color:$primaryColor;
     }
-    font-size: rem(50) ;
+    font-size: rem(45) ;
     font-weight: 800;
     color:$colorlight;
-    padding-bottom: rem(20);
+    padding-bottom: rem(30);
+    line-height: rem(60);
 
   }
   

@@ -4,22 +4,23 @@ import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper'
 import LiveStream from '../../../components/LiveStream/LiveStream'
 import PrimaryButton from '../../../components/buttons/Buttons'
 import { useSelector,useDispatch } from 'react-redux'
-import { fetchPopularLiveStreams } from './popularLiveStream'
+import { fetchMostPopularLiveStreams } from './mostPopularLiveStreamInBrowse'
 
 
-const PopularLiveStreamers = () => {
+const PopularLiveStreamInBrowse = () => {
 
-  const popularLiveStreams = useSelector((state)=>{return state.popularLiveStreams})
+  const mostpopularLiveStreams = useSelector((state)=>{return state.mostPopularLiveStreams})
 
   const dispatch = useDispatch()
   
    React.useEffect(() => {
-    dispatch(fetchPopularLiveStreams())
+    dispatch(fetchMostPopularLiveStreams())
    }, [])
  
-   const postsElement = popularLiveStreams.posts.map(post =><LiveStream {...post} key={post.id} />
-   
+   const postsElement = mostpopularLiveStreams.posts.map(post =><LiveStream {...post} key={post.id} />
+
    )
+
 
   return (
     <SectionWrapper>
@@ -44,4 +45,5 @@ const PopularLiveStreamers = () => {
   )
 }
 
-export default PopularLiveStreamers
+export default PopularLiveStreamInBrowse
+

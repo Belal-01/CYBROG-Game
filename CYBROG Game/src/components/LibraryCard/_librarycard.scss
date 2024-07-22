@@ -3,7 +3,7 @@
   @include flex(row,space-between,center,20);
   flex-wrap: wrap;
   &::after{
-    @include horizontal-line(1,$primaryColor,100%);
+    @include horizontal-line(1,$textColor,100%);
 
   }
   
@@ -15,12 +15,12 @@
     color:gray; 
   }
 }
-@media screen and (min-width: 750px) and (max-width: 1150px) {
+@media screen and (min-width: 500px) and (max-width: 1150px) {
   .Library-card>*{
     flex:1 1 25%;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 750px) {
+@media screen and (min-width: 0px) and (max-width: 500px) {
   .Library-card{
     justify-content: space-between;
     &__img{
@@ -52,4 +52,35 @@
 
     }
   }
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+  .card{
+    flex:1 1 20%;
+    width:rem(400);
+    background-color: red;
+
+  }
+  }
+@media screen and (min-width: 500px) and (max-width: 1080px) {
+  .card{
+    flex:1 1 40%;
+    background-color: blue;
+
+  }
+
+  
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .card{
+    flex:60%;
+    background-color: green;
+
+  }
+
+  
 }

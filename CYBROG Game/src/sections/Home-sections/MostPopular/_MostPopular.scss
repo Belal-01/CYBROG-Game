@@ -1,7 +1,8 @@
 
 .most-popular{
  &__cards{
- @include flex(row,space-between,center,$primarymargin/5);
+ @include flex(row,space-between,stretch,$primarymargin/5);
  flex-wrap: wrap;
+ 
  }
 }

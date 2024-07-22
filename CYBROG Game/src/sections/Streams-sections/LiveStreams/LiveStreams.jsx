@@ -1,40 +1,33 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css'
 import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper';
 import SectionHeader from '../../../components/sectionHeader/SectionHeader';
-import { gamesInfo } from '../../../../firebase'
-import { onSnapshot } from 'firebase/firestore'
-import Card from '../../../components/Card/Card'
+import { useSelector,useDispatch } from 'react-redux';
 import StreamsCard from '../../../components/StreamsCard/StreamsCard';
+import { fetchLiveStreams } from './liveStream';
 
 const LiveStreams = (props) => {
-  const [allGamesData, setAllGamesData] = React.useState([]);
+  const liveStreams = useSelector((state)=>{return state.liveStreams})
 
-  React.useEffect(() => {
-    const subscrib = onSnapshot(gamesInfo, (snapShot) => {
-      const newArray = snapShot.docs.map(doc => ({
-        ...doc.data(),
-        id: doc.id
-      }))
-      setAllGamesData(newArray)
-    })
-    return subscrib
-  }, [])
-  const cardsElement = allGamesData.map(game =>
-    <Card {...game} key={game.id} />
-  )
+  const dispatch = useDispatch()
+  
+   React.useEffect(() => {
+    dispatch(fetchLiveStreams())
+   }, [])
+ 
+   const postsElement = liveStreams.posts.map(post =>
+     <StreamsCard {...post} key={post.id} />
+   )
+   
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1150},
       items: 3,
       slidesToSlide: 3 // optional, default to 1.
     },
-    // tap: {
-    //   breakpoint: { max: 1290, min: 1024 },
-    //   items: 3,
-    //   slidesToSlide: 3 // optional, default to 1.
-    // },
+
     tablet: {
       breakpoint: { max: 1150, min: 464 },
       items: 2,
@@ -72,11 +65,10 @@ const LiveStreams = (props) => {
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
           >
-         <StreamsCard />
-         <StreamsCard />
-         <StreamsCard />
-         <StreamsCard />
-         <StreamsCard />
+         {postsElement}
+         {postsElement[1]}
+         {postsElement[2]}
+         {postsElement[0]}
         </Carousel>
 
     </div>
@@ -86,4 +78,4 @@ const LiveStreams = (props) => {
   )
 }
 
-export default LiveStreams
+export default memo(LiveStreams) 

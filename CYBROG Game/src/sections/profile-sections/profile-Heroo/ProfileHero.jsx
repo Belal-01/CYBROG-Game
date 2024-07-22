@@ -4,8 +4,25 @@ import Container from '../../../components/Container/Container'
 import PrimaryButton, { SecondaryButton } from '../../../components/buttons/Buttons'
 import SectionHeader from '../../../components/sectionHeader/SectionHeader'
 import Clip from '../../../components/ProfileClip/Clip'
+import { useSelector,useDispatch } from 'react-redux'
+import { fetchProfileClips } from './profileClips'
 
 const ProfileHero = () => {
+
+  const profileClips = useSelector((state)=>{return state.profileClips})
+
+  const dispatch = useDispatch()
+  
+   React.useEffect(() => {
+    dispatch(fetchProfileClips())
+   }, [])
+ 
+ 
+   
+   const postsElement = profileClips.posts.map(post =>
+     <Clip {...post} key={post.id} />
+   )
+
   return (
     <SectionWrapper>
       <div className="profile-hero">      
@@ -59,10 +76,7 @@ const ProfileHero = () => {
         <span>&nbsp;Clips</span>
       </SectionHeader>
       <div className="profile-clips">
-        <Clip />
-        <Clip />
-        <Clip />
-        <Clip />
+        {postsElement}
       </div>
       <div className="load-clips-button">
         <PrimaryButton>

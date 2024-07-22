@@ -10,21 +10,32 @@ import 'bootstrap/js/dist/dropdown'
 import { BrowserRouter as Router,Route,Routes } from "react-router-dom"
 import Streams from "./pages/Streams/Streams"
 import Browes from "./pages/Browes/Browes"
-import { useSelector,useDispatch } from 'react-redux'
+import { memo } from "react"
+import { useSelector } from 'react-redux'
+import popularLiveStream from "./sections/Streams-sections/MostPopularLiveStreamers/popularLiveStream"
 
 
 const App = () => {
   const popularPosts = useSelector((state)=>{return state.mostPopularPosts})
-  console.log(popularPosts)
-  const styles = {
+  const libraryPosts = useSelector((state)=>{return state.gamesLibrary})
+  const profileClips = useSelector((state)=>{return state.profileClips}) 
+  const liveStreams  = useSelector((state)=>{return state.liveStreams})
+  const topStreamers = useSelector((state)=>state.topStreamers)
+  const popularliveStreams = useSelector((state)=>state.popularLiveStreams)
 
-    display:popularPosts.loading?'none':'' 
+//  console.log('inside app')
+
+
+ // console.log(liveStreams)
+  const styles = {
+ 
+    display: popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading?'none':'' 
   }
   
   return (
     <>  
-    
-{popularPosts.loading?
+  
+   {popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading?
 <div className="spinner" style={{color:'#FFFFFF'}}>
   <div>
      <img src="../public/images/Infinity@1x-1.2s-200px-200px (1).svg"/>
@@ -50,4 +61,4 @@ const App = () => {
   )
 }
 
-export default App
+export default memo(App)  

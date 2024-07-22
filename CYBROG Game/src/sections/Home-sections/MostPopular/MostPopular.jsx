@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../../../components/Card/Card'
 import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper'
 import SectionHeader from '../../../components/sectionHeader/SectionHeader'
+import PrimaryButton from '../../../components/buttons/Buttons'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchMostPopularPosts } from './mostPopulat'
 
@@ -31,7 +32,11 @@ const MostPopular = () => {
         {popularPosts.loading && <div>loading...</div>}
         {postsElement}
       </div>
-
+      <div className="mostPopular__liveStreams--button">
+        <PrimaryButton>
+          Discover Popular
+        </PrimaryButton>
+      </div>
     </SectionWrapper>
   )
 }

@@ -8,6 +8,8 @@ const Hero = () => {
     backgroundPosition: "top right",
     backgroundSize: "cover",
     backgroundPositionX: "center",
+    padding:'80px 50px',
+
   };
   return (
     <SectionWrapper style ={styles}>
@@ -15,7 +17,7 @@ const Hero = () => {
           Welcome To Cyborg
         </div>
         <div className="Hero__title">
-        <span>BROWSE</span>  OUR<br /> POPULAR  GAMES HERE
+        <span>BROWSE</span> OUR<br /> POPULAR  GAMES HERE
         </div>
           <PrimaryButton>
             Browse Now
