@@ -26,7 +26,7 @@ const MostPopular = () => {
     <SectionWrapper>
       <SectionHeader>
         <a href="#">Most Popular</a>
-        <span> &nbsp; Right Now</span>
+        <span>&nbsp; Right Now</span>
       </SectionHeader>
       <div className="most-popular__cards">
         {popularPosts.loading && <div>loading...</div>}

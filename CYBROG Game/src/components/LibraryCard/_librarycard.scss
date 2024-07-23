@@ -1,9 +1,10 @@
 .Library-card{
-  @include section-wrapper(300,$colorDarkest,$primarypadding/4,$primarypadding/4);
+  @include section-wrapper(250,$colorDarkest,$primarypadding/4,$primarypadding/4);
   @include flex(row,space-between,center,20);
   flex-wrap: wrap;
   &::after{
     @include horizontal-line(1,$textColor,100%);
+
 
   }
   
@@ -12,15 +13,19 @@
     border-radius: rem($disprimary/2);
   }  
   span{
-    color:gray; 
+    color:$textColor; 
+  }
+  h6{
+    font-weight: 700;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 1150px) {
+@media screen and (min-width: 851px) and (max-width: 1140px) {
   .Library-card>*{
     flex:1 1 25%;
+    
   }
 }
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 850px) {
   .Library-card{
     justify-content: space-between;
     &__img{
@@ -51,36 +56,9 @@
       text-align: center;
 
     }
-  }
-}
-
-
-
-
-
-@media (min-width: 1024px) {
-  .card{
-    flex:1 1 20%;
-    width:rem(400);
-    background-color: red;
-
-  }
-  }
-@media screen and (min-width: 500px) and (max-width: 1080px) {
-  .card{
-    flex:1 1 40%;
-    background-color: blue;
-
+    &::after{
+      margin-top:rem(20);
+    }
   }
 
-  
-}
-@media screen and (min-width: 0px) and (max-width: 500px) {
-  .card{
-    flex:60%;
-    background-color: green;
-
-  }
-
-  
 }

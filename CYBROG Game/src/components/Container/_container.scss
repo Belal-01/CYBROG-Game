@@ -1,26 +1,62 @@
 .main__container{
-  width:80%;
-  margin:  auto;
+
   padding: rem($primarypadding);
-  min-width: rem(540);
-  max-width: 100%;
   background-color: $colorDark;
   border-radius: rem($disprimary/2);
   margin-top: rem(50);
+  flex-shrink: 0;
+  flex: 1 1 80%;
 
 }
+.first-Container{
+  @include flex(column,center,center,0);
+  padding-top:rem(80);
 
+}
+@media screen and (min-width: 1740px) and (max-width: 2151px) {
+  .main__container{
+    width:rem(1700);
+  //  min-width: 70%;
+  }
+}
 
+@media screen and (min-width: 1440px) and (max-width: 1740px) {
+  .main__container{
+    width:rem(1400);
+  //  min-width: 70%;
+  }
+}
 
-@media screen and (min-width: 500px) and (max-width: 1080px) {
+@media screen and (min-width: 1140px) and (max-width: 1440px) {
+  .main__container{
+    width:rem(1100);
+  //  min-width: 70%;
+  }
+}
+
+@media screen and (min-width: 840px) and (max-width: 1140px) {
 .main__container{
-  width:70%;
+  width:rem(800)
 }
   
 }
-@media screen and (min-width: 0px) and (max-width: 500px) {
+// @media screen and (min-width: 550px) and (max-width: 800px) {
+//   .main__container{
+//     width:80%;
+//   }
+  
+// }
+@media screen and (min-width: 450px) and (max-width: 840px) {
+  .main__container{
+    width:94%;
+  }
+  
+}
+@media screen and (min-width: 0px) and (max-width: 450px) {
   .main__container{
     width:95%;
+    padding: rem($primarypadding/2);
+
   }
   
 }

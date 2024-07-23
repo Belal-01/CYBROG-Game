@@ -43,7 +43,7 @@ const mostPopularSlice = createSlice({
     builder.addCase(fetchMostPopularPosts.rejected,(state,action)=>{
       state.loading = false
       state.posts=[],
-      state.error=action.error
+      state.error=action.error.message
     })
   }
 })

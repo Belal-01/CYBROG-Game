@@ -1,5 +1,5 @@
 .liveStream{
-  @include section-wrapper(160,$colorDarkest,0,0);
+  @include section-wrapper(155,$colorDarkest,0,0);
   &__img{
     position: relative;
     @include flex(column,center,center,0);
@@ -15,13 +15,15 @@
     }
   }
   &__body{
-    @include flex(row ,space-between,start,15);
-    padding:rem(15) rem(10);
+    @include flex(row ,space-between,start,13);
+    padding:rem(15) rem(0) rem(15) rem(10);
     &--img{
       flex:1 1 25%;
+    @include flex(row ,center,center,15);
       img{
-        width: 100%;
-        border-radius: rem($disprimary/2);
+        // width: rem(70);
+        border-radius: rem(30);
+        justify-self:center ;
       }
     }
     &--info{
@@ -29,14 +31,16 @@
       &-name{
         color:$primaryColor;
         font-size: rem(15);
+        font-weight: 700;
         margin-bottom: rem(10);
         span:First-child{
-          font-size: rem(20);
+          font-size: rem(18);
         }
 
       }
       &-state{
-        font-size: rem(18);
+        font-size: rem(17);
+        font-weight: 800;
       }
     }
   }

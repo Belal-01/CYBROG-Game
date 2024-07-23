@@ -26,7 +26,7 @@ const PopularLiveStreamInBrowse = () => {
     <SectionWrapper>
       <SectionHeader>
         <a href="#">Most Popular</a>
-        <span>&nbsp; Live Streams</span>
+        <span>&nbsp;Live Streams</span>
       </SectionHeader>
 
       <div className="mostPopular__liveStreams">

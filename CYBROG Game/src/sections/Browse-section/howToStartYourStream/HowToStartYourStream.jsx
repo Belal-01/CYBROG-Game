@@ -10,8 +10,8 @@ const HowToStartYourStream = () => {
     <div className='HowToStart'>
       <div className="HowToStart__Header">
         <SectionHeader>
-          <a href="#">How To start Your </a>
-          <span>&nbsp; Live Stream</span>
+          <a href="#">How To start Your</a>
+          <span>&nbsp;Live Stream</span>
         </SectionHeader>
       </div>
     </div>

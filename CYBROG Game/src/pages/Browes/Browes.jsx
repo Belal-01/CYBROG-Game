@@ -12,12 +12,10 @@ const Browes = () => {
     <div className='liveStream-container'>
       <LiveStreams FirstTitle ="Featured" SecondTitle="Game"/>
       <TopDownloading />
-
-
-      <HowToStartYourStream />
-
-     <PopularLiveStreamInBrowse />
     </div>
+    <HowToStartYourStream />
+    <PopularLiveStreamInBrowse />
+
     </div>
   )
 }

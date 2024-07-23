@@ -22,20 +22,25 @@ const App = () => {
   const liveStreams  = useSelector((state)=>{return state.liveStreams})
   const topStreamers = useSelector((state)=>state.topStreamers)
   const popularliveStreams = useSelector((state)=>state.popularLiveStreams)
+  const mostPopular = useSelector((state)=>state.mostPopularLiveStreams)
+  const topDownloaded = useSelector((state)=>state.topDownloaded)
+
+
 
 //  console.log('inside app')
 
 
- // console.log(liveStreams)
+  console.log(popularPosts)
   const styles = {
  
-    display: popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading?'none':'' 
+    display: popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading||mostPopular.loading||topDownloaded.loading?'none':'' 
+
   }
   
   return (
     <>  
   
-   {popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading?
+   {popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading||mostPopular.loading||topDownloaded.loading?
 <div className="spinner" style={{color:'#FFFFFF'}}>
   <div>
      <img src="../public/images/Infinity@1x-1.2s-200px-200px (1).svg"/>
@@ -44,6 +49,7 @@ const App = () => {
     <div style = {styles}>
       <Router>
           <Header />
+          <div className="first-Container">
             <Container>
               <Routes>
               <Route path="/" element={<Home/>} />
@@ -52,6 +58,7 @@ const App = () => {
               <Route path="/Browse" element = {<Browes />} />
               </Routes>
             </Container>
+          </div>
           <Footer />
         </Router>
       </div>  

@@ -9,6 +9,7 @@ const Hero = () => {
     backgroundSize: "cover",
     backgroundPositionX: "center",
     padding:'80px 50px',
+    
 
   };
   return (
@@ -19,9 +20,12 @@ const Hero = () => {
         <div className="Hero__title">
         <span>BROWSE</span> OUR<br /> POPULAR  GAMES HERE
         </div>
+        <div className="Hero__button">
           <PrimaryButton>
             Browse Now
           </PrimaryButton>
+        </div>
+          
     </SectionWrapper>
  
   )

@@ -9,8 +9,11 @@
   &__name{
     color: $primaryColor;
     font-size: rem(15);
+    font-weight: 700;
+
     span:first-child{
       font-size: rem(18);
+
     }
   }
 }

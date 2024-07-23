@@ -1,6 +1,14 @@
 .Cybrog-navbar{
-  background-color: $colorDarkest;
+   background-color: $colorDarkest;
    min-height: rem(80);
+   transition:background-color 0.4s;
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:80;
+   z-index: 100;
+   
   .inter-nav{
     &__search{
       @include flex(row,start,center,10);
@@ -12,7 +20,6 @@
       border: none;
       font-size: 14px;
       padding-left: rem(10);
-      margin-left: rem(120);
       input{
         background-color: transparent;
         border: none;
@@ -57,8 +64,12 @@
 
 }
 @media (min-width:992px){
+  .inter-nav__search {
+    margin-left: rem(120);
+    
+  }
   .collaps-section ul{
-    @include flex(row,space-between,center,15);
+    @include flex(row,space-between,center,20);
     .profile-Wrapper{
       @include section-wrapper(100%,$colorDark,$disprimary/12,$disprimary/4);
       @include flex(row,space-between,center,5);
@@ -86,9 +97,6 @@
 @media (max-width:991px){
   .Cybrog-navbar{
     background-color: $colorlight;     
-  }
-  .inter-nav__search{
-    opacity: 0;
   }
   .profile-Wrapper img{
     display: none;

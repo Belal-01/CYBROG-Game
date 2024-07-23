@@ -15,6 +15,7 @@
     @include flex(column,center,start,2);
     &--name{
       font-size: rem(15);
+      font-weight: 700;
     }
     &--state{
       color:$textColor;

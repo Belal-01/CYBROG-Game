@@ -3,12 +3,14 @@
   @include flex(row,center,center,0);
 
   &__Services{
-    @include flex(row,center,center,15);
+    @include flex(row,center,stretch,15);
     flex-wrap: wrap;
     &--button{
       width:100%;
       margin:rem(30) 0;
       @include flex(row,center,center,0);
+      margin-bottom: rem(50);
+
     }
   }
   

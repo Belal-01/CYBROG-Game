@@ -1,7 +1,15 @@
 .section__wrapper{
-  @include section-wrapper(400,$colorDarkest,$primarypadding,40);
+  @include section-wrapper(200,$colorDarkest,$primarypadding,40);
   color:$colorlight;
   margin-bottom:rem($primarymargin);
   position: relative;
 
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .section__wrapper{
+    padding: rem($primarypadding/2);
+
+  }
+  
 }

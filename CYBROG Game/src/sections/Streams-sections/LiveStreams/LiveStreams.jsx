@@ -1,7 +1,6 @@
 import React, { memo } from 'react'
 import Carousel from "react-multi-carousel";
-import 'react-multi-carousel/lib/styles.css'
-import SectionWrapper from '../../../components/sectionWrapper/SectionWrapper';
+import 'react-multi-carousel/lib/styles.css';
 import SectionHeader from '../../../components/sectionHeader/SectionHeader';
 import { useSelector,useDispatch } from 'react-redux';
 import StreamsCard from '../../../components/StreamsCard/StreamsCard';
@@ -23,13 +22,12 @@ const LiveStreams = (props) => {
 
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1150},
+      breakpoint: { max: 3000, min: 950},
       items: 3,
       slidesToSlide: 3 // optional, default to 1.
     },
-
     tablet: {
-      breakpoint: { max: 1150, min: 464 },
+      breakpoint: { max: 950, min: 464 },
       items: 2,
       slidesToSlide: 2 // optional, default to 1.
     },
@@ -43,8 +41,8 @@ const LiveStreams = (props) => {
 
       <div className='liveStream-Wrapper'>
         <SectionHeader>
-          <a href="#"> {props.FirstTitle} </a>
-          <span> &nbsp; {props.SecondTitle}</span>
+          <a href="#"> {props.FirstTitle}</a>
+          <span>&nbsp;{props.SecondTitle}</span>
         </SectionHeader>
 
         <Carousel

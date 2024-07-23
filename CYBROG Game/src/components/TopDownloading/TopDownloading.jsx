@@ -21,8 +21,8 @@ const TopDownloading = () => {
   return (
     <div className="topStreamers-Wrapper">
     <SectionHeader>
-      <a href="#">Top </a>
-      <span>&nbsp; Downloaded</span>
+      <a href="#">Top</a>
+      <span>&nbsp;Downloaded</span>
     </SectionHeader>
 
     {postsElement}

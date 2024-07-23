@@ -1,19 +1,30 @@
 .liveStream-container{
   @include flex(row ,space-between ,start,20);
   flex-wrap: wrap;
+  margin-bottom: rem(50);
 }
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .liveStream-Wrapper{
-      flex:1 1 59%;
+      flex:1 1 62%;
     }
     .topStreamers-Wrapper{
-     flex:1 1 35%;
+     flex:1 1 32%;
     }
     .liveStream{
       flex:1 1 20%;
+     
+    }
+    .liveStream__body--img{    
+      img{
+        width:rem(50);
+        border-radius:(15) ;
+      }
+    }
+    .mostPopular__liveStreams{
+   //   column-gap: rem(30);
     }
     }
-  @media screen and (min-width: 500px) and (max-width: 1080px) {
+  @media screen and (min-width: 550px) and (max-width: 1140px) {
     .liveStream-Wrapper{
       flex:1 1 60%;
     }
@@ -23,11 +34,20 @@
     }
     .liveStream{
       flex:1 1 40%;
+    } 
+    .liveStream__body--img{
+      
+      img{
+        width:rem(50);
+        border-radius:(20) ;
+      }
     }
-  
-    
   }
-  @media screen and (min-width: 0px) and (max-width: 500px) {
+
+    
+  
+
+  @media screen and (min-width: 0px) and (max-width: 550px) {
     .liveStream-Wrapper{
       flex:1 1 60%;
     }
@@ -36,6 +56,13 @@
     }
     .liveStream{
       flex:1 1 60%;
+    }
+    .liveStream__body--img{
+      
+      img{
+        width:rem(50);
+        border-radius:(30) ;
+      }
     }
     
   }

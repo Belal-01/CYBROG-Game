@@ -13,7 +13,7 @@ const StreamsCard = (props) => {
     <div className="card__stream--body">
       <div className="card__stream--body__info">
         <span className='card__stream--body__info__name'>{props.name} </span>
-        <span className='card__stream--body__info__state'>{props.state}K download</span>
+        <span className='card__stream--body__info__state'>{props.state}K downloaded</span>
       </div>
       <div className="card__stream--body__rating">
         <span><span style={{color:"yellow"}}><FaStar /></span> {props.rate}</span>

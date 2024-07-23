@@ -1,5 +1,5 @@
 .mostPopular__liveStreams{
-  @include flex(row,space-between,center,15);
+  @include flex(row,space-between,stretch,20);
   flex-wrap: wrap;
   &--button{
     width: 100%;

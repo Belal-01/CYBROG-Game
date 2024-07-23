@@ -1,7 +1,7 @@
 .card__stream{
   @include section-wrapper(130,$colorDarkest,$primarypadding/8,0);
   color:$colorlight;
-  margin-right:rem(15);
+  margin-right:rem(20);
   margin-bottom: rem(20);
  &--img{
     position: relative;
@@ -20,11 +20,14 @@
     }
   }
   &--body{
-    @include flex(row,space-between,center,10);
+    @include flex(row,space-between,center,5);
     padding: 0 rem(5);
     font-size: rem(14);
     &__info{
       @include flex(column,center,start,5);
+      &__name{
+        font-weight: 700;
+      }
       &__state{
         font-family: Arial, Helvetica, sans-serif;
         color:gray;
@@ -35,7 +38,6 @@
     
     &__rating{
       @include flex(column,start,center,5);
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 300;
     }
   }
@@ -47,4 +49,5 @@
   bottom:0;
   transition:opacity 0.4s;
   transition:bottom 0.4s;
+  font-weight: 700;
 }

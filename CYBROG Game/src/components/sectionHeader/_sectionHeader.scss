@@ -1,5 +1,5 @@
 .section__header{
-  font-size: rem(28) ;
+  font-size: rem(35) ;
   font-weight: 700;
   margin-bottom: rem($primarymargin/2);
   a{
@@ -8,4 +8,12 @@
   span{
     color: $primaryColor;
   }
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .section__header{
+    font-size: rem(25);
+
+  }
+  
 }

@@ -1,7 +1,6 @@
 .card{
   @include section-wrapper(150,$colorDark,$primarypadding/2,$primarypadding/4);
-  color:$colorlight;
-  
+  color:$colorlight; 
   img{
     border-radius: rem($disprimary/4);
     margin-bottom: rem($primarymargin/5);
@@ -13,11 +12,12 @@
     &__info{
       @include flex(column,start,center,10);
       &__name{
-        
+        font-weight:700;
+        text-indent: rem(-3)
       }
       &__state{
         color:gray;
-        font-family: Arial, Helvetica, sans-serif;
+        
       }
     }
     &__rating{
@@ -28,12 +28,12 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1140px) {
   .card{
     flex:1 1 20%;
   }
   }
-@media screen and (min-width: 500px) and (max-width: 1080px) {
+@media screen and (min-width: 500px) and (max-width: 1140px) {
   .card{
     flex:1 1 40%;
   }
