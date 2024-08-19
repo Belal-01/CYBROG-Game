@@ -39,7 +39,7 @@ const Header = () => {
           };
       }, []); // Empty dependency array ensures this effect runs once on mount and cleanup on unmount
   
-    console.log(windowWidth);
+    //console.log(windowWidth);
     const handelClick = useCallback((name)=>{
         const newArray=[]
         navItemState.forEach((nav)=>{
