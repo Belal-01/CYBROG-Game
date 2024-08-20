@@ -10,9 +10,9 @@ import 'bootstrap/js/dist/dropdown'
 import { BrowserRouter as Router,Route,Routes } from "react-router-dom"
 import Streams from "./pages/Streams/Streams"
 import Browes from "./pages/Browes/Browes"
-import { memo } from "react"
+
 import { useSelector } from 'react-redux'
-import popularLiveStream from "./sections/Streams-sections/MostPopularLiveStreamers/popularLiveStream"
+
 
 
 const App = () => {
@@ -53,9 +53,9 @@ const App = () => {
             <Container>
               <Routes>
               <Route path="/" element={<Home/>} />
-              <Route path="/profile" element={<Profile/>} />
+              {/* <Route path="/profile" element={<Profile/>} />
               <Route path="/Streams" element={<Streams/>} />
-              <Route path="/Browse" element = {<Browes />} />
+              <Route path="/Browse" element = {<Browes />} /> */}
               </Routes>
             </Container>
           </div>
@@ -68,4 +68,4 @@ const App = () => {
   )
 }
 
-export default memo(App)  
+export default App  

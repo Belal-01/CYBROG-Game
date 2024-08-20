@@ -9,6 +9,7 @@ export const fetchMostPopularPosts =  createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const querySnapshot = await getDocs(collection(dp, 'gamesInfo'));
+      console.log(dp)
       const gamesInfo = querySnapshot.docs.map(doc => ({
         id: doc.id,
         ...doc.data()
