@@ -4,12 +4,12 @@ import { dp } from "../../../../firebase";
 
 
 
-export const fetchMostPopularPosts =  createAsyncThunk(
-  'mostPopularPosts/fetchMostPopularPosts',
+export const fetchMostPopularPosts =  createAsyncThunk('mostPopularPosts/fetchMostPopularPosts',
   async (_, thunkAPI) => {
     try {
-      const querySnapshot = await getDocs(collection(dp, 'gamesInfo'));
-      console.log(dp)
+      console.log('try')
+      const querySnapshot =await getDocs(collection(dp, 'gamesInfo'));
+      console.log(getDocs(collection(dp, 'gamesInfo')))
       const gamesInfo = querySnapshot.docs.map(doc => ({
         id: doc.id,
         ...doc.data()

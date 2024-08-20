@@ -30,7 +30,7 @@ const App = () => {
 //  console.log('inside app')
 
 
-  console.log(popularPosts)
+   console.log(popularPosts)
   const styles = {
  
     display: popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading||mostPopular.loading||topDownloaded.loading?'none':'' 
@@ -53,9 +53,9 @@ const App = () => {
             <Container>
               <Routes>
               <Route path="/" element={<Home/>} />
-              {/* <Route path="/profile" element={<Profile/>} />
+              <Route path="/profile" element={<Profile/>} />
               <Route path="/Streams" element={<Streams/>} />
-              <Route path="/Browse" element = {<Browes />} /> */}
+              <Route path="/Browse" element = {<Browes />} />
               </Routes>
             </Container>
           </div>

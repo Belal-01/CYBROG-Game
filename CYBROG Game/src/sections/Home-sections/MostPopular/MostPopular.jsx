@@ -14,6 +14,7 @@ const MostPopular = () => {
  const dispatch = useDispatch()
  
   React.useEffect(() => {
+  
    dispatch(fetchMostPopularPosts())
   }, [])
 
