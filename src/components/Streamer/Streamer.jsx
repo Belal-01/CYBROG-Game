@@ -10,7 +10,7 @@ const Streamer = (props) => {
 
       <div className="streamer__img">
         <span className='streamer__count'>0{props.count}</span>
-      <img src={`../../../public/images/${props.img}.jpg`} alt="person img" />
+      <img src={`images/${props.img}.jpg`} alt="person img" />
       </div>
       <div className="streamer__name">
         <span style={{color:"#ec6090"}}><FaCircleCheck /> </span>

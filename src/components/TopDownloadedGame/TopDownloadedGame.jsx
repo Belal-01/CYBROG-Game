@@ -8,7 +8,7 @@ const TopDownloadedGame = (props) => {
       <div className='topDownloadedGame'>
         <div className="topDownloadedGame__info2">
         <div className="topDownloadedGame__img">
-            <img src={`../../../public/images/${props.img}.jpg`} alt="person img" />
+            <img src={`images/${props.img}.jpg`} alt="person img" />
           </div>
           <div className="topDownloadedGame__info">
               <div className="topDownloadedGame__info--name">{props.name}</div>

@@ -6,7 +6,7 @@ const Clip = (props) => {
   return (
     <div className="clip-card">
       <div className="img">
-        <img src={`../../../public/images/${props.img}.jpg`} alt="card-img" />
+        <img src={`images/${props.img}.jpg`} alt="card-img" />
         <div className='video-resume'>
           <span  style={{color:"#ec6090",fontSize:"18px"}}><RxResume/>
           </span>

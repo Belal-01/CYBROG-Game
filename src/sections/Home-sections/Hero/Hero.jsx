@@ -3,7 +3,7 @@ import SectionWrapper from "../../../components/sectionWrapper/SectionWrapper"
 
 const Hero = () => {
   const styles = {
-    backgroundImage: "url('../public/images/banner-bg.jpg')",
+    backgroundImage: "url('images/banner-bg.jpg')",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "top right",
     backgroundSize: "cover",

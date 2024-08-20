@@ -6,7 +6,7 @@ const StreamsCard = (props) => {
   return (
     <div className="card__stream">
       <div className="card__stream--img">
-        <img src={`../../../public/images/${props.img}.jpg`} alt="Stream-img" />
+        <img src={`images/${props.img}.jpg`} alt="Stream-img" />
         <div className="show-streamers">2.4k Streaming</div>
 
       </div>

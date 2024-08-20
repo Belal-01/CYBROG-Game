@@ -4,7 +4,7 @@ const BrowseService = (props) => {
   return (
     <div className='BrowseService'>
       <div className="BrowseService__img">
-        <img src={`../../../public/images/${props.img}.jpg`} alt="service" />
+        <img src={`images/${props.img}.jpg`} alt="service" />
 
       </div>
       <div className="BrowseService__title">

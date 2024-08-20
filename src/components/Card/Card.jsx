@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa6";
 const Card = (props) => {
   return (
     <div className="card">
-    <img src={`../../public/images/${props.img}.jpg`} alt="card-img" />
+    <img src={`images/${props.img}.jpg`} alt="card-img" />
     <div className="card-body">
       <div className="card-body__info">
         <span className='card-body__info__name'>{props.name}</span>

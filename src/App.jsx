@@ -43,7 +43,7 @@ const App = () => {
    {popularPosts.loading||libraryPosts.loading||profileClips.loading||liveStreams.loading||topStreamers.loading||popularliveStreams.loading||mostPopular.loading||topDownloaded.loading?
 <div className="spinner" style={{color:'#FFFFFF'}}>
   <div>
-     <img src="../public/images/Infinity@1x-1.2s-200px-200px (1).svg"/>
+     <img src="images/Infinity@1x-1.2s-200px-200px (1).svg"/>
   </div>
 </div>:null}
     <div style = {styles}>

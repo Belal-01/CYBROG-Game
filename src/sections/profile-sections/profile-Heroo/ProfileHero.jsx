@@ -27,7 +27,7 @@ const ProfileHero = () => {
     <SectionWrapper>
       <div className="profile-hero">      
         <div className="profile-hero__img">
-          <img src="../../../../public/images/profile.jpg" alt="profile Img" />
+          <img src="images/profile.jpg" alt="profile Img" />
         </div>
         <div className="profile-hero__info">
           <PrimaryButton>
