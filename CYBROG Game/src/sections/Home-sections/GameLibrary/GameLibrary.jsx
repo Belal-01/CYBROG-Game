@@ -6,15 +6,17 @@ import PrimaryButton from '../../../components/buttons/Buttons'
 import { useSelector,useDispatch } from 'react-redux'
 import { fetcGamesLibraryPosts } from './gameLibrary'
 const GameLibrary = () => {
+
   const libraryPosts = useSelector((state)=>{return state.gamesLibrary})
 
   const dispatch = useDispatch()
   
    React.useEffect(() => {
     dispatch(fetcGamesLibraryPosts())
-   },[])
+   }, [])
  
  
+   
    const postsElement = libraryPosts.posts.map(post =>
      <Librarycard {...post} key={post.id} />
    )

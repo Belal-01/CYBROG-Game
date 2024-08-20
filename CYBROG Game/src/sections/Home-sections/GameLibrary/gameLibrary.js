@@ -3,7 +3,8 @@ import { getDocs, collection } from 'firebase/firestore';
 import { dp } from "../../../../firebase";
 
 
-export const fetcGamesLibraryPosts =  createAsyncThunk('gamesLibrary/fetcGamesLibraryPosts',
+export const fetcGamesLibraryPosts =  createAsyncThunk(
+  'gamesLibrary/fetcGamesLibraryPosts',
   async (_, thunkAPI) => {
     try {
       const querySnapshot = await getDocs(collection(dp, 'libraryGames'));
