@@ -6,7 +6,7 @@ const Librarycard = (props) => {
    
     <div className="Library-card">
        <div className="Library-card__img">
-       <img src={`../../assets/images/${props.img}.jpg`} alt="cardImg" />
+       <img src={`../../../public/images/${props.img}.jpg`} alt="cardImg" />
       </div>
       <div className="Library-card__name">
         <h6>{props.name}</h6>
